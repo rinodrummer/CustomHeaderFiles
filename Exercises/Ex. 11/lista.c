@@ -153,25 +153,29 @@ struct elem *recuperaLista() {
 
     struct elem *ListaDiElementi = NULL;
 
+    int val = 0;
+
     FILE *fp;
 
     fp = fopen(FILE_NAME, "r");
 
     if (fp != NULL) {
         while (!feof(fp)) {
-            curr = (struct elem *) malloc(sizeof(struct elem));
+            if (fscanf(fp, "%d", &val) == 1) {
+                curr = (struct elem *) malloc(sizeof(struct elem));
+                curr->info = val;
+                curr->next = NULL;
 
-            fscanf(fp, "%d", &curr->info);
+                if (ListaDiElementi == NULL) {
+                    ListaDiElementi = curr;
+                }
 
-            if (ListaDiElementi == NULL) {
-                ListaDiElementi = curr;
+                if (prev != NULL) {
+                    prev->next = curr;
+                }
+
+                prev = curr;
             }
-
-            if (prev != NULL) {
-                prev->next = curr;
-            }
-
-            prev = curr;
         }
 
         printf("Lista recuperata con successo.\n\n");
