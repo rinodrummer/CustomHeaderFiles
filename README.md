@@ -20,16 +20,16 @@ Al suo interno inserire una **header guard**, ovvero una costante che determina 
 Al suo interno, includere le librerie necessarie per il funzionamento del codice della libreria.
 E' **obbligatorio** includere il file '.h' corrispettivo all'interno di questo file!
 
-```
-#include <stdio.h>
-#include "nomeFile.h"
+    ```
+    #include <stdio.h>
+    #include "nomeFile.h"
 
-// Se il codice dovesse necessitare di costanti per il suo funzionamento:
-#ifndef DEBUG
-#define DEBUG 0
-#endif
+    // Se il codice dovesse necessitare di costanti per il suo funzionamento:
+    #ifndef DEBUG
+    #define DEBUG 0
+    #endif
 
-// Sviluppare il codice dei prototipi presenti nel file '.h'
-```
+    // Sviluppare il codice dei prototipi presenti nel file '.h'
+    ```
 
-Questo file non deve contenere la funzione ```main()```.
+    Questo file non deve contenere la funzione ```main()```.
