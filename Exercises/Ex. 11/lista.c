@@ -161,7 +161,7 @@ struct elem *recuperaLista() {
         while (!feof(fp)) {
             curr = (struct elem *) malloc(sizeof(struct elem));
 
-            fscanf(fp, "%d", &ListaDiElementi->info);
+            fscanf(fp, "%d", &curr->info);
 
             if (ListaDiElementi == NULL) {
                 ListaDiElementi = curr;
