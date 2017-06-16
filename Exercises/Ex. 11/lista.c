@@ -98,6 +98,8 @@ struct elem *minimoPari(struct elem *ListaDiElementi) {
         if (((ListaDiElementi->info % 2) == 0) && (ListaDiElementi->info < minimoPari->info)) {
             minimoPari = ListaDiElementi;
         }
+
+        ListaDiElementi = ListaDiElementi->next;
     }
 
     return minimoPari;
