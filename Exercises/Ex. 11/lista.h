@@ -7,7 +7,7 @@ struct elem {
 };
 
 // Legge da tastiera quanti elementi aggiungere;
-struct elem *popolaLista(struct elem *ListaDiElementi);
+struct elem *popolaLista();
 
 // Stampa la lista;
 void stampaLista(struct elem *ListaDiElementi);
