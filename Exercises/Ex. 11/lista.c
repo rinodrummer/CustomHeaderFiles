@@ -19,7 +19,7 @@ struct elem *popolaLista() {
     scanf("%d", &x);
 
     if (x > 0) {
-        while (i < x) {
+        for (i = 0; i < x; i++) {
             curr = (struct elem *) malloc(sizeof(struct elem));
 
             printf("\n\tInserire il valore dell'elemento %d di %d: ", (i + 1), x);
