@@ -36,6 +36,7 @@ struct elem *popolaLista() {
             prev = curr;
         }
     }
+    printf("\n");
 
     return ListaDiElementi;
 }
