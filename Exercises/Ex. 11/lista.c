@@ -111,7 +111,7 @@ struct elem *elimina(struct elem *ListaDiElementi, int x) {
 
     int i = 0;
 
-    while (ListaDiElementi != NULL && i < 0) {
+    while (ListaDiElementi != NULL && i < x) {
         tmp = ListaDiElementi->next;
 
         free(ListaDiElementi);
