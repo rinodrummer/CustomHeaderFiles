@@ -22,7 +22,7 @@ E' **obbligatorio** includere il file '.h' corrispettivo all'interno di questo f
 
     ```
     #include <stdio.h>
-    #include "nomeFile.h"
+    #include "nomeLib.h"
 
     // Se il codice dovesse necessitare di costanti per il suo funzionamento:
     #ifndef DEBUG
@@ -32,4 +32,8 @@ E' **obbligatorio** includere il file '.h' corrispettivo all'interno di questo f
     // Sviluppare il codice dei prototipi presenti nel file '.h'
     ```
 
-    Questo file non deve contenere la funzione ```main()```.
+Questo file non deve contenere la funzione ```main()```.
+
+3. Nel file '.c' contentente la funzione ```main()``` includere il file '.h';
+4. Precompilare tutti i file '.c' separatamente con il comando ```gcc -c nomeLib.c```;
+5. Eseguire la copilazione finale includendo gli altri file '.o' salvando l'output e col seguente comando ```gcc -o main.out main.o nomeLib.o```;
