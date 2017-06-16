@@ -29,7 +29,7 @@ struct elem *popolaLista() {
                 ListaDiElementi = curr;
             }
 
-            if (prev != NULL)  {
+            if (prev != NULL) {
                 prev->next = curr;
             }
 

@@ -10,5 +10,11 @@ int main(void) {
 
     stampaLista(ListaDiElementi);
 
+    printf("Dimensioni lista: %d;\n\n", lunghezzaLista(ListaDiElementi));
+
+    ListaDiElementi = deallocaLista(ListaDiElementi);
+
+    stampaLista(ListaDiElementi);
+
     return 0;
 }
