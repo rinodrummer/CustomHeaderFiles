@@ -16,7 +16,7 @@ Al suo interno inserire una **header guard**, ovvero una costante che determina 
 
 **N.B.**: Nei file .h vanno SOLO i Prototipi delle funzioni.
 
-1. Creare un file con estensione '.c' con lo stesso nome del corrispettivo file '.h':
+2. Creare un file con estensione '.c' con lo stesso nome del corrispettivo file '.h':
 Al suo interno, includere le librerie necessarie per il funzionamento del codice della libreria.
 E' **obbligatorio** includere il file '.h' corrispettivo all'interno di questo file!
 
