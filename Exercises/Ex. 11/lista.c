@@ -117,6 +117,7 @@ struct elem *elimina(struct elem *ListaDiElementi, int x) {
         free(ListaDiElementi);
 
         ListaDiElementi = tmp;
+        i++;
     }
 
     return ListaDiElementi;
