@@ -134,6 +134,7 @@ void salvaLista(struct elem *ListaDiElementi) {
             fprintf(fp, "%d\n", ListaDiElementi->info);
         }
 
+        printf("Lista salvata con successo.\n\n");
         fclose(fp);
     }
     else {
@@ -177,6 +178,7 @@ struct elem *recuperaLista(int x) {
             }
         }
 
+        printf("Lista recuperata con successo.\n\n");
         fclose(fp);
     }
 
