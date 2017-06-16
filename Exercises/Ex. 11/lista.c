@@ -132,6 +132,8 @@ void salvaLista(struct elem *ListaDiElementi) {
     if (fp != NULL) {
         while(ListaDiElementi != NULL) {
             fprintf(fp, "%d\n", ListaDiElementi->info);
+
+            ListaDiElementi = ListaDiElementi->next;
         }
 
         printf("Lista salvata con successo.\n\n");
