@@ -140,27 +140,25 @@ void salvaLista(struct elem *ListaDiElementi) {
         fclose(fp);
     }
     else {
-        printf("Errore durante il salvataggio della lista.\n");
+        printf("Errore durante il salvataggio della lista.\n\n");
     }
 
     return;
 }
 
 // recupera una lista fino al numero di elementi indicati. Tutta se x <= 0 o x => lunghezzaLista
-struct elem *recuperaLista(int x) {
+struct elem *recuperaLista() {
     struct elem *prev = NULL;
     struct elem *curr = NULL;
 
     struct elem *ListaDiElementi = NULL;
-
-    int i = 0;
 
     FILE *fp;
 
     fp = fopen(FILE_NAME, "r");
 
     if (fp != NULL) {
-        while (!feof(fp) && (i < x)) {
+        while (!feof(fp)) {
             curr = (struct elem *) malloc(sizeof(struct elem));
 
             fscanf(fp, "%d", &ListaDiElementi->info);
@@ -174,14 +172,13 @@ struct elem *recuperaLista(int x) {
             }
 
             prev = curr;
-
-            if (x > 0) {
-                i++;
-            }
         }
 
         printf("Lista recuperata con successo.\n\n");
         fclose(fp);
+    }
+    else {
+        printf("Errore durante il recupero della lista.\n\n");
     }
 
     return ListaDiElementi;

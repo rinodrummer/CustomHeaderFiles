@@ -27,7 +27,6 @@ struct elem *elimina(struct elem *ListaDiElementi, int x);
 // Salva la lista in un file
 void salvaLista(struct elem *ListaDiElementi);
 
-// recupera una lista fino al numero di elementi indicati. Tutta se x <= 0 o x => lunghezzaLista
-struct elem *recuperaLista(int x);
+struct elem *recuperaLista();
 
 #endif
