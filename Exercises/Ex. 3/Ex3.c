@@ -5,16 +5,15 @@
 #include "persona.h"
 
 int main(void) {
-    struct Data d;
+    //struct Data d;
 
-    /*struct Persona2 *p = NULL;
+    struct Persona2 *p = NULL;
 
     p = creaPersona();
+    stampaPersona(p);
 
-    stampaPersona(p);*/
-    
-    d = leggiData();
-    stampaData(d);
+    /*d = leggiData();
+    stampaData(d);*/
 
     return 0;
  }

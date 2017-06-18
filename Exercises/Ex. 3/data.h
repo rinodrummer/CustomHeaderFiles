@@ -10,8 +10,8 @@ struct Data {
     int anno;
 };
 
-struct Data leggiData();
+/*struct Data leggiData();
 
-void stampaData(struct Data d);
+void stampaData(struct Data d);*/
 
 #endif
