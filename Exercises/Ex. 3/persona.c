@@ -7,13 +7,15 @@
 struct Persona2 *creaPersona() {
     struct Persona2 *p = (struct Persona2 *) malloc(sizeof(struct Persona2));
 
-    // TODO Try Data pointer
+    // Works!
+    //struct Data *d = &(p->dataDiNascita);
 
     printf("Nome: ");
     scanf("%s", p->nome);
 
     printf("Cognome: ");
     scanf("%s", p->cognome);
+    // *d = leggiData(INT_MODE);
     p->dataDiNascita = leggiData(INT_MODE);
 
     return p;
