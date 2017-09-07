@@ -36,4 +36,4 @@ Questo file non deve contenere la funzione ```main()```.
 
 3. Nel file '.c' contentente la funzione ```main()``` includere il file '.h';
 4. Precompilare tutti i file '.c' separatamente con il comando ```gcc -c nomeLib.c```;
-5. Eseguire la copilazione finale includendo gli altri file '.o' salvando l'output e col seguente comando ```gcc -o main.out main.o nomeLib.o```;
+5. Eseguire la copilazione finale includendo gli altri file '.o' salvando l'output e col seguente comando ```gcc -o main.out main.o nomeLib.o```. Nel caso di più librerie, aggiungere in coda gli altri file '.o' in qualsiasi ordine (Es.: ```gcc -o main.out main.o nomeLib1.o nomeLib2.o```);
